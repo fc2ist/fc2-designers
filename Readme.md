@@ -1,4 +1,4 @@
-#FC2 Blog Designer's Link
+#FC2 Blog Designer's Gallery
 FC2ブログのテンプレート制作者さんのブログのリンク集です。
 
 ## URL
