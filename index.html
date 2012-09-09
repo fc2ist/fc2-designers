@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>FC2BLOG Designer's Link</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/site.css" />
+	<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="js/jquery.imagesloaded.js"></script>
+	<script type="text/javascript" src="js/jquery.ba-hashchange.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jsrender-1.0pre.min.js"></script>
+	<script type="text/javascript" src="js/site.js"></script>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top navbar-inverse">
+  <div class="navbar-inner">
+    <a class="brand" href="#!/10">FC2BLOG Designer's Link</a>
+    <ul class="nav">
+      <li><a href="#!/all">全て表示</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="navbar navbar-fixed-bottom navbar-inverse">
+  <div class="navbar-inner">
+    <div class="pagination pagination-centered"></div>
+  </div>
+</div>
+
+<ul id="list"></ul>
+
+<script id="template-list" type="text/x-jsrender">
+<li class="box">
+  <a class="pin" href="{{:url}}" title="{{:title}}" rel="external">
+    <img src="http://capture.heartrails.com/large?{{:url}}" width="400" height="300" alt="{{:title}}" />
+    <h3 class="title">{{:title}}</h3>
+    <p class="description">{{:description}}</p>
+    <div class="meta">
+      {{if twitter}}
+      <button class="author twitter" data-href="{{:twitter}}">
+        <i></i>
+        {{if author}}
+          {{:author}}
+        {{else}}
+          {{:twitter}}
+        {{/if}}
+      </button>
+      {{else}}
+      <span class="author">
+        {{if author}}
+          {{:author}}
+        {{else}}
+          -
+        {{/if}}
+      </span>
+      {{/if}}
+    </div>
+  </a>
+</li>
+</script>
+
+</body>
+</html>
