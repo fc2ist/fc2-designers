@@ -1,19 +1,5 @@
-#jQuery Animation Text
-@keyframesを使ったアニメーションで文字をランダムに揺らすプラグインです。
-
-##Demo
-* [Demo Page](http://fc2ist.github.com/jquery.anime-text/demo/)
-
-##Usage
-
-    // 適用
-    $('.anime-text').animeText({
-      'speed': '1s', // 揺らぎのスピード
-      'vital': 1 // 揺らぎの激しさ
-    });
-    
-    // 解除
-    $('.anime-text').animeText('destroy');
+#FC2 Blog Designer's Link
+FC2ブログのテンプレート制作者さんのブログのリンク集です。
 
 ## Author
 Twitter: @moi_fc2  
